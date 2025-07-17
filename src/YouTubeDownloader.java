@@ -53,9 +53,19 @@ public class YouTubeDownloader extends JFrame {
 
         new Thread(() -> {
             try {
-                // Windows: yt-dlp.exe
-                // Linux/macOS: just "yt-dlp"
-                ProcessBuilder pb = new ProcessBuilder("yt-dlp", "-f", format, url);
+                // Create "downloads" directory if it doesn't exist
+                File downloadDir = new File("downloads");
+                if (!downloadDir.exists()) {
+                    downloadDir.mkdirs();
+                }
+
+                // yt-dlp command with output path (-P)
+                ProcessBuilder pb = new ProcessBuilder(
+                        "yt-dlp",
+                        "-P", downloadDir.getAbsolutePath(),
+                        "-f", format,
+                        url
+                );
 
                 pb.redirectErrorStream(true);
                 Process process = pb.start();

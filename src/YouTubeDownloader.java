@@ -1,3 +1,4 @@
+
 import javafx.application.Application;
 import javafx.geometry.Insets;
 import javafx.geometry.Pos;
@@ -49,7 +50,7 @@ public class YouTubeDownloader extends Application {
         // Output area
         outputArea = new TextArea();
         outputArea.setEditable(false);
-        outputArea.setPrefHeight(200);
+        outputArea.setPrefHeight(300);
         outputArea.setWrapText(true);
 
         // Progress bar

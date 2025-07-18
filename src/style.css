@@ -1,32 +1,59 @@
+/* Root background and fonts */
 .root {
+    -fx-background-color: linear-gradient(to bottom right, #1e1e2f, #2b5876);
     -fx-font-family: "Segoe UI", sans-serif;
-    -fx-background-color: #f4f4f4;
+    -fx-text-fill: #ffffff;
 }
 
+/* Labels */
 .label {
-    -fx-text-fill: #333;
+    -fx-text-fill: #f1f1f1;
     -fx-font-size: 14px;
 }
 
+/* Text field */
 .text-field {
     -fx-background-color: #ffffff;
-    -fx-border-color: #cccccc;
-    -fx-border-radius: 5px;
-    -fx-padding: 6px;
+    -fx-text-fill: #333;
+    -fx-background-radius: 8;
+    -fx-padding: 8;
+    -fx-border-color: #ccc;
+    -fx-border-radius: 8;
 }
 
+/* ComboBox */
+.combo-box {
+    -fx-background-color: #ffffff;
+    -fx-text-fill: #000000;
+    -fx-background-radius: 8;
+    -fx-border-radius: 8;
+}
+
+/* Button */
 .button {
-    -fx-background-color: #0078d7;
+    -fx-background-color: #00C9A7;
     -fx-text-fill: white;
     -fx-font-weight: bold;
-    -fx-border-radius: 5px;
+    -fx-background-radius: 10;
+    -fx-padding: 8 16;
 }
 
 .button:hover {
-    -fx-background-color: #005fa3;
+    -fx-background-color: #00B18F;
 }
 
+/* TextArea */
 .text-area {
-    -fx-control-inner-background: #fefefe;
-    -fx-border-color: #ddd;
+    -fx-background-color: #27293d;
+    -fx-text-fill: #000504;
+    -fx-font-family: Consolas, monospace;
+    -fx-border-color: #444;
+    -fx-border-radius: 8;
+    -fx-background-radius: 8;
+}
+
+/* ProgressBar */
+.progress-bar {
+    -fx-accent: #00ffcc;
+    -fx-background-radius: 10;
 }

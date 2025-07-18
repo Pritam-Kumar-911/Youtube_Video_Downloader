@@ -50,7 +50,7 @@ public class YouTubeDownloader extends Application {
         // Output area
         outputArea = new TextArea();
         outputArea.setEditable(false);
-        outputArea.setPrefHeight(300);
+        outputArea.setPrefHeight(400);
         outputArea.setWrapText(true);
 
         // Progress bar
